@@ -1,25 +1,24 @@
 %{?_javapackages_macros:%_javapackages_macros}
+
 Name:           xmlgraphics-commons
-Version:        1.5
-Release:        4.2
+Version:        2.0.1
+Release:        3.1
 Epoch:          0
 Summary:        XML Graphics Commons
-Group:		Development/Java
-
+Group:          Development/Java
 License:        ASL 2.0
 URL:            http://xmlgraphics.apache.org/
-Source0:        http://apache.skknet.net/xmlgraphics/commons/source/%{name}-%{version}-src.tar.gz
+Source0:        http://apache.org/dist/xmlgraphics/commons/source/%{name}-%{version}-src.tar.gz
 
 BuildArch:      noarch
 BuildRequires:  java-devel >= 1:1.6.0
-BuildRequires:  jpackage-utils
+BuildRequires:  javapackages-local
 BuildRequires:  ant >= 0:1.6
 BuildRequires:  ant-junit >= 0:1.6
 BuildRequires:  junit
 BuildRequires:  apache-commons-io >= 1.3.1
 BuildRequires:  apache-commons-logging >= 1.0.4
 Requires:       java
-Requires:       jpackage-utils
 Requires:       apache-commons-io >= 1.3.1
 Requires:       apache-commons-logging >= 1.0.4
 
@@ -34,8 +33,6 @@ PostScript files, and much more.
 
 %package        javadoc
 Summary:        Javadoc for %{name}
-
-Requires:       jpackage-utils
 
 %description    javadoc
 %{summary}.
@@ -76,6 +73,28 @@ cp -pr build/javadocs/* $RPM_BUILD_ROOT%{_javadocdir}/%{name}
 
 
 %changelog
+* Sat Feb 11 2017 Fedora Release Engineering <releng@fedoraproject.org> - 0:2.0.1-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_26_Mass_Rebuild
+
+* Fri Feb 05 2016 Fedora Release Engineering <releng@fedoraproject.org> - 0:2.0.1-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_24_Mass_Rebuild
+
+* Tue Jul 14 2015 Michael Simacek <msimacek@redhat.com> - 0:2.0.1-1
+- Update to upstream version 2.0.1
+
+* Fri Jun 19 2015 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0:2.0-2
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_23_Mass_Rebuild
+
+* Fri Jan 30 2015 Rüdiger Landmann <rlandmann@redhat.com> - 0:2.0-1
+- Rebase on new upstream
+
+* Mon Aug  4 2014 Mikolaj Izdebski <mizdebsk@redhat.com> - 0:1.5-4
+- Update to current packaging guidelines
+- Resolves: rhbz#1107290
+
+* Sun Jun 08 2014 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0:1.5-3
+- Rebuilt for https://fedoraproject.org/wiki/Fedora_21_Mass_Rebuild
+
 * Sun Aug 04 2013 Fedora Release Engineering <rel-eng@lists.fedoraproject.org> - 0:1.5-2
 - Rebuilt for https://fedoraproject.org/wiki/Fedora_20_Mass_Rebuild
 
