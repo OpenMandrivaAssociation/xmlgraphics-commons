@@ -2,7 +2,7 @@
 
 Name:           xmlgraphics-commons
 Version:        2.0.1
-Release:        3.2
+Release:        3.3
 Epoch:          0
 Summary:        XML Graphics Commons
 Group:          Development/Java
