@@ -7,7 +7,7 @@ Epoch:          0
 Summary:        XML Graphics Commons
 Group:          Development/Java
 License:        ASL 2.0
-URL:            http://xmlgraphics.apache.org/
+URL:            https://xmlgraphics.apache.org/
 Source0:        http://apache.org/dist/xmlgraphics/commons/source/%{name}-%{version}-src.tar.gz
 
 BuildArch:      noarch
