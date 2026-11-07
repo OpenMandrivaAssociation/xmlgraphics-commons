@@ -1,2 +1,4 @@
-sources:
+removed_sources:
   xmlgraphics-commons-2.0.1-src.tar.gz: 4360a2e395128128a721fd591eb38ef33252b7c7
+sources:
+  xmlgraphics-commons-2.12-src.tar.gz: aad62f3e26766345df9be19251e1ac001aee834b
